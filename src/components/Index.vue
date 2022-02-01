@@ -85,11 +85,7 @@
 <script>
 import { onMounted, ref, watch } from 'vue'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import Axios from 'axios'
-
-require('dotenv').config();
-
-Axios.defaults.baseURL = process.env.VUE_APP_API_ENDPOINT
+import Axios from '../plugins/axios'
 
 export default {
   setup() {
