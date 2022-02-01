@@ -17,10 +17,7 @@ const app = express();
 // });
 
 const cors = require('cors');
-const corsOption = {
-  origin: "https://pai-auth-api.herokuapp.com"
-};
-app.use(cors(corsOption));
+app.use(cors());
 const path = require('path');
 const serveStatic = require('serve-static');
 app.use(serveStatic(__dirname + "/dist"));
