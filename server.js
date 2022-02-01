@@ -5,7 +5,7 @@ const serveStatic = require('serve-static');
 app = express();
 app.use(serveStatic(__dirname + "/dist"));
 const corsOption = {
-  origin: "https://pai-auth-api.herokuapp.com/",
+  origin: "https://pai-auth-api.herokuapp.com",
   credentials: true
 };
 app.use(cors(corsOption));
